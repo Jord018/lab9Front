@@ -7,7 +7,10 @@ import { useMessageStore } from '@/stores/message'
 
 const event = ref<Event>({
   id: null,
-  category: '',
+  category: {
+    id: 0,
+    name: ''
+  },
   title: '',
   description: '',
   location: '',
